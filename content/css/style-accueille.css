@@ -118,7 +118,7 @@ main .one .exempleprojet .table .carde{
   bottom: 0%;
   height: 80%;
   width: 10%;
-  max-width: 20%;
+max-width: 500px;
   margin: 20px;
 } 
 main .one .exempleprojet .table .carde .name{
