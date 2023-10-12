@@ -1,7 +1,6 @@
-body{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Roboto+Condensed&family=Ubuntu&display=swap');
+
+
 
 body header{
     position: absolute;
@@ -10,8 +9,10 @@ body header{
     background:#06001a;
     height: 10%;
     width: 100%;
-    display: flex;
+    display: fixed;
     flex: 0 10%;
+    z-index: 999;
+    border-bottom: 1px solid #ffffff;
 }
 body header nav{
     position: absolute;
@@ -19,6 +20,7 @@ body header nav{
     left: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
 body header nav .right{
     position: absolute;
@@ -35,6 +37,7 @@ body header nav .right a{
     text-decoration: none;
     color: #ffffff;
     border-bottom: 1px solid transparent;
+    font-size: 16px;
 }
 body header nav .right a:hover{
     border-bottom-color: #ffffff;
@@ -42,6 +45,7 @@ body header nav .right a:hover{
 body header nav .left p{
     color: #ffffff;
     margin: 2px;
+    font-size: 24px;
 }
 body header nav .left{
     color: #ffffff;

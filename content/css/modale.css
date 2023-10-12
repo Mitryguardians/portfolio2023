@@ -1,0 +1,47 @@
+.modal{
+    background: #06001a;
+    height: 50%;
+    max-height: 50%;
+    max-width: 50%;
+    width: 40%;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: none;
+}
+.modal .imgee{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+}
+.modal .imgee img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 20px;
+}
+.modal a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: red;
+    cursor: pointer;
+}
+.modal #plus{
+    font-size: 12px;
+    background: red;
+}
+@media screen and (max-width: 600px){
+    .modal{
+        display: none;
+    }
+}

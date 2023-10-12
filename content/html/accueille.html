@@ -6,9 +6,10 @@
     <title>Maxence Binet | Porfolio</title>
     <link rel="stylesheet" href="../css/style-accueille.css">
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/modale.css">
 </head>
 <body>
-    <header>
+    <header>    
         <nav>
             <div class="left">
                 <p>Mitryguardians</p>
@@ -19,8 +20,58 @@
             </div>
         </nav>
     </header>
+    <div class="fleche">
+        <img src="../img/icon1.png" alt="">
+    </div>
     <main>
+        <div class="one">
+            <h1 class="title">
+                <span>B</span>
+                <span>I</span>
+                <span>E</span>
+                <span>N</span>
+                <span>V</span>
+                <span>E</span>
+                <span>N</span>
+                <span>U</span>
+                <span>E</span>
+            </h1>
 
+            <div class="quisuije" id="one">
+                <div class="o">
+                    <h2>Qui suis-je ?</h2>
+                    <p>Je suis un passionnée de l'informatique, sur mon temps personnel je code. Les languages que je maitrise le mieux sont le html, css, python. Et je me considère comme debutant en javascripts, c++.</p>
+                </div>
+                <img src="../img/photo-pres.jpg" alt="">
+            </div>
+            <div class="exempleprojet" id="two">
+                <h1>Quelques exemples de projet que j'ai réaliser:</h1>
+                <div class="table">
+                    <div class="carde">
+                        <h1 class="name">Un site pour le lycee</h1>
+                        <p class="desc">J'ai coder un site pour l'un de mes cours au lycée.</p>
+                        <button id="plusdimage" onclick="modalimg(1)">Voir a quoi il resemble</button>
+                    </div>
+                    <div class="carde">
+                        <h1 class="name">Site de streaming</h1>
+                        <p class="desc">J'ai coder un site de streaming complet (pas de possibilier de regarder des films).</p>
+                        <button id="plusdimage" onclick="modalimg(2)">Voir a quoi il resemble</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="modal" id="modal">
+        <a id="leave">&cross;</a>
+        <div class="imgee">
+            <img id="imgOne" src="" alt="">
+            <img id="imgTwo" src="" alt="">
+            <img id="imgThree" src="" alt="">
+            <img id="imgFour" src="" alt="">
+            <img id="imgFive" src="" alt="">
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>
+<!-- // image3.src = "../img/sitelycee/cpt3.png" -->
