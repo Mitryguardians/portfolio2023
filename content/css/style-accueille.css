@@ -118,7 +118,7 @@ main .one .exempleprojet .table .carde{
   bottom: 0%;
   height: 80%;
   width: 10%;
-max-width: 500px;
+  max-width: 500px;
   margin: 20px;
 } 
 main .one .exempleprojet .table .carde .name{
@@ -138,18 +138,39 @@ main .one .exempleprojet .table .carde p{
 }
 main .one .exempleprojet .table .carde button{
   position: absolute;
-  bottom: 0;
+  bottom: -1%;
   background:#000000;
   color: #ffffff;
   border-radius: 5%;
   border: none;
   cursor: pointer;
 }
-
+@media screen and (max-width: 1000px){
+  main .one .title span{
+    font-size: 20px;
+    display: inline;
+  }
+  main .one .exempleprojet h1{
+    left: 0;
+  }
+  main .one .exempleprojet .table{
+    flex-direction: column;
+  }
+  main .one .exempleprojet .table .carde{
+    width: 200px;
+    height: 200px;
+  }
+  main .one .quisuije img{
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 600px) {
 
     main .one {
       flex-direction: column; 
+    }
+    main .one .title span{
+      display: inline;
     }
     main .one .title{
       font-size: 23px;
@@ -188,4 +209,4 @@ main .one .exempleprojet .table .carde button{
     main .one .exempleprojet .table .carde button{
       display: none;
     }
-  }
+}

@@ -23,6 +23,13 @@ function modalimg(site){
         image4.style.display = "none"
         image5.style.display = "none"
     }
+    if(site === 3){
+        image1.src = "../img/jeupy/cpt1.png"
+        image2.src = "../img/jeupy/cpt2.png"
+        image3.style.display = "none"
+        image4.style.display = "none"
+        image5.style.display = "none"
+    }
     leave.addEventListener('click', ()=>{
         modal.style.display = "none"
     })
