@@ -1,9 +1,9 @@
 .modal{
     background: #06001a;
-    height: 50%;
+    height: 400px;
     max-height: 50%;
     max-width: 50%;
-    width: 40%;
+    width: 500px;
     z-index: 999;
     position: absolute;
     top: 50%;
@@ -40,8 +40,54 @@
     font-size: 12px;
     background: red;
 }
-@media screen and (max-width: 600px){
+.modalAbout{
+    background: #06001a;
+    height: 100px;
+    max-height: 50%;
+    max-width: 50%;
+    width: 500px;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    display: none;
+}
+.modalAbout #leaveAbout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: red;
+    cursor: pointer;
+}
+.modalAbout .text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+}
+.modalAbout .text p{
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+.modalAbout .text p a{
+    color: #ffffff;
+}
+@media screen and (max-width: 700px){
     .modal{
-        display: none;
+        height: 400px;
+        max-height: 50%;
+        max-width: 100%;
+        width: 1000px;
+    }
+    .modal .imgee img{
+        object-fit: cover;
     }
 }

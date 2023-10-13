@@ -34,3 +34,12 @@ function modalimg(site){
         modal.style.display = "none"
     })
 }
+const modalabout = document.getElementById('modalAbout')
+const leavetwo = document.getElementById('leaveAbout')
+leavetwo.addEventListener('click', ()=>{
+    modalabout.style.display = "none"
+})
+const aboutbtn = document.getElementById('about')
+aboutbtn.addEventListener('click', ()=>{
+    modalabout.style.display = "block"
+})

@@ -133,7 +133,7 @@ main .one .exempleprojet .table .carde .name{
 main .one .exempleprojet .table .carde p{
   color: #fffff2;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 0;
 }
 main .one .exempleprojet .table .carde button{
@@ -163,8 +163,14 @@ main .one .exempleprojet .table .carde button{
   main .one .quisuije img{
     margin-top: 20px;
   }
+  main .one #detetctezone{
+    display: none;
+  }
+  main .one .footer{
+    display: none;
+  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     main .one {
       flex-direction: column; 
@@ -203,10 +209,8 @@ main .one .exempleprojet .table .carde button{
       margin: 5px;
       font-size: 18px;
     }
-    main .progresseMenu{
-      display: none;
-    }
+
     main .one .exempleprojet .table .carde button{
-      display: none;
+      bottom: -45%;
     }
 }
