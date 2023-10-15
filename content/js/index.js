@@ -43,6 +43,3 @@ const aboutbtn = document.getElementById('about')
 aboutbtn.addEventListener('click', ()=>{
     modalabout.style.display = "block"
 })
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-});

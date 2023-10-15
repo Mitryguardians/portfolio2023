@@ -5,6 +5,7 @@ body{
 }
 body .fleche{
   position: absolute;
+  display: block;
   bottom: 0;
   right: 0;
   z-index: 999;
@@ -152,13 +153,63 @@ main .one .exempleprojet .table .carde button {
   align-self: center; 
   margin-top: auto;
 }
-
+main .one .competence{
+  position: absolute;
+  top: 200%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #30217e;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(253.88, 100%, 52%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.59, 100%, 50%) 0, transparent 55%);
+}
+main .one .competence .title{
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  width: fit-content;
+  font-size: 24px;
+}
+main .one .competence .content{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+main .one .competence .content .box{
+  border-radius: 3%;
+  margin: 20px;
+  backdrop-filter: blur(11px) saturate(28%);
+  -webkit-backdrop-filter: blur(11px) saturate(28%);
+  background-color: rgba(16, 102, 255, 0.66);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+main .one .competence .content .box p{
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+main .one .competence .content .box p .positif{
+  color: yellow;
+}
+main .one .competence .content .box p .negativ{
+  color: #000000;
+}
 @media screen and (max-width: 1000px){
   main .one .title span{
     font-size: 20px;
     display: inline;
   }
+  main .one .exempleprojet{
+    margin-bottom: 10px;
+  }
   main .one .exempleprojet h1{
+    top: 0;
     left: 0;
   }
   main .one .exempleprojet .table{
@@ -182,11 +233,18 @@ main .one .exempleprojet .table .carde button {
   main .one .quisuije img{
     margin-top: 20px;
   }
-  main .one #detetctezone{
-    display: none;
+  main .one .competence .content .box{
+    padding: 0px;
   }
-  main .one .footer{
-    display: none;
+  main .one .competence .title{
+    display: inline;
+    font-size: 20px;
+  }
+  main .one .competence .content .box h2{
+    font-size: 18px;
+    width: max-content;
+    position: relative;
+    left: 0px;
   }
 }
 @media screen and (max-width: 700px) {

@@ -21,6 +21,7 @@ body header nav{
     height: 100%;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
 }
 body header nav .right{
     position: absolute;
